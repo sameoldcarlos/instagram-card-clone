@@ -1,0 +1,324 @@
+.content {
+    width: 100vw;
+    height: auto;
+    background-color: var(--absolute-white);
+    color: var(--extra-dark-gray);
+}
+
+.content__title {
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.card {
+    width: 98%;
+    height: auto;
+    max-width: 614px;
+    background-color: var(--absolute-white);
+    border: 1px solid var(--very-light-gray);
+    border-radius: 3px;
+}
+
+.cardheader {
+    display: grid;
+    width: 100%;
+    height: 60px;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr;
+}
+
+.userinfo {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    display: flex;
+    height: 60px;
+    margin: auto 0;
+    align-items: center;
+}
+
+.circlestory {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin: 0 18px 0 16px;
+    align-items: center;        
+    border-radius: 50%;
+}
+
+.circlestory--active {
+    width: 38px;
+    height: 38px;
+    margin: 0 12px 0 10px;
+    border: 3px solid transparent;
+    background-image: 
+        linear-gradient(var(--absolute-white), var(--absolute-white)), 
+        radial-gradient(circle at bottom left, var(--pale-yellow),var(--strong-orange), var(--bright-purple));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+}
+
+.userpic {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("https://yt3.ggpht.com/yti/APfAmoG1HZ1OWBmimNzdAFKO5K_PxIuh1eYi5T9sVXhUBA=s108-c-k-c0x00ffffff-no-rj");
+    background-size: 32px;
+    background-position: center;
+}
+
+.username {
+    font-weight: 700;
+}
+
+.username__link {
+    cursor: pointer;
+}
+
+.moreoptions {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    display: flex;
+    width: 40px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cardcontent {
+    width: 100%;
+    height: auto;
+    background-color: var(--extra-dark-gray);
+}
+
+.cardcontent__image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.cardoptions {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+}
+.cardbutton {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.cardbutton--heart {
+    margin-left: 8px;
+}
+.iconcontainer {
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-position: center;
+}
+.cardbutton--heart .iconcontainer {
+    background-image: url("/assets/images/like.svg");
+    animation: like .15s ease-in-out;
+
+}
+.cardbutton--heart .iconcontainer--active {
+    background-image: url("/assets/images/like_active.svg");
+    animation: deslike .15s ease-in-out;
+}
+@keyframes like {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }   
+}
+@keyframes deslike {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }   
+}
+
+.cardbutton--comment .iconcontainer {
+    background-image: url("/assets/images/comment.svg");
+}
+
+.cardbutton--share .iconcontainer {
+    background-image: url("/assets/images/share.svg");
+}
+.cardbutton--save {
+    margin: 0 6px 0 auto;
+}
+.cardbutton--save .iconcontainer {
+    background-image: url("/assets/images/save.svg");
+}
+
+.cardbutton--save .iconcontainer--active {
+    background-image: url("/assets/images/save_active.svg");
+}
+
+.likes {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.otheruserpic {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    border-radius: 50%;
+    background-image: url("https://yt3.ggpht.com/ytc/AKedOLRjgnp9dJaTTOOUqOFT64vAzGDaGuV4PtWlKiie20c=s88-c-k-c0x00ffffff-no-rj");
+    background-size: contain;
+    background-position: center;
+}
+
+.likesinfo {
+    margin-left: 4px;
+}
+
+.otherusername, .otherlikes {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.description {
+    margin-left: 16px;
+    line-height: 18px;
+}
+
+.comments {
+    width: 100%;
+    height: 66px;
+}
+
+.seeall {
+    display: flex;
+    height: 18px;
+    margin-left: 16px;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.seeall__link {
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.comment {
+    height: 18px;
+    margin-left: 16px;
+    margin-bottom: 4px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.time {
+    display: flex;
+    width: 100%;
+    height: 18px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.time__info {
+    margin-left: 16px;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.leaveacomment {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--extra-light-gray);
+}
+.formcomment{
+    display: grid;
+    grid-template-columns: 40px 1fr 51.19px;
+    align-items: center;
+    width: 94.791%;
+    height: auto;
+}
+.emojibutton {
+    grid-column: 1/span 1;
+    width: 40px;
+    height: 40px;
+    padding: 8px 16px 8px 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.emojibutton .iconcontainer {
+    display: flex;
+    width: 24px;
+    height:24px;
+    background-image: url("/assets/images/emoji.svg");
+}
+.formcomment__text {
+    grid-column: 2/span 1;
+    height: 18px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.pubblishbutton {
+    grid-column: 3/span 1;
+    font-weight: 700;
+    color: var(--blue-inactive);
+    background-color: var(--absolute-white);
+    border: none;
+    pointer-events: none;
+}
+
+.pubblishbutton--active {
+    color: var(--blue-active);
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-info {
+    font-family: monospace;
+    color: var(--purple-haze);
+    text-decoration: none;
+    text-align: center;
+}

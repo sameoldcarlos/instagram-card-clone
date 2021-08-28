@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
+    <script src="js/index.js"></script>
+
+    <link rel="shortcut icon" href="/assets/images/instagram_icon.png">
+    <title>Instagram Card Clone</title>
+</head>
+<body>
+    <main role="main" class="content">
+        <h1 class="content__title">Instagram Card Clone</h1>
+        <div class="card-container">
+            <article class="card">
+                <div class="cardheader">
+                    <div class="userinfo">
+                        <div class="circlestory">
+                            <div class="userpic"></div>
+                        </div>
+                        <span class="username">
+                            <a class="username__link">username</a>
+                        </span>
+                    </div>
+                    <div class="moreoptions" title="Mais opções">
+                        <img class="moreoptions__icon"src="/assets/images/more-options.svg" alt="Mais opções">
+                    </div>
+                </div>
+                <div class="cardmain">
+                    <div class="cardcontent">
+                        <img class="cardcontent__image" src="https://i.picsum.photos/id/828/614/411.jpg?hmac=MGP2C5Al3qiiV7as4Jlk3Q4ngLXkACXMVXHVN4AC1TY" alt="">
+                    </div>
+                    <div class="cardoptions">
+                        <button class="cardbutton cardbutton--heart" id="likebutton" title="Curtir">
+                            <span class="iconcontainer" id="likeicon"></span>
+                        </button>
+                        <button class="cardbutton cardbutton--comment">
+                            <span class="iconcontainer" id="commenticon"></span>
+                        </button>
+                        <button class="cardbutton cardbutton--share">
+                            <span class="iconcontainer" id="shareicon"></span>
+                        </button>
+                        <button class="cardbutton cardbutton--save" id="savebutton" title="Salvar">
+                            <span class="iconcontainer" id="saveicon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="likes">
+                        <div class="otheruserpic"></div>
+                        <span class="likesinfo">Curtido por 
+                            <a class="otherusername">otheruser</a> 
+                            e 
+                            <a class="otherlikes">outras 60 pessoas</a>
+                        </span>
+                    </div>
+                    <span class="description">
+                        <span class="username"><a class="username__link">username</a></span>
+                        Lorem ipsum dolor sit amet, consectetur.
+                    </span>
+                    <div class="comments">
+                        <div class="seeall"><a class="seeall__link">Ver todos os 6 comentários</a></div>
+                        <div class="comment">
+                            <span class=commentinfo><a class="otherusername">randomuser</a></span>
+                            cras bibendum tortor congue 🙊</span>
+                        </div>
+                        <div class="comment">
+                            <span class=commentinfo><a class="otherusername">otheruser</a></span>
+                            aliquam vestibulum erat facilisis lacus bibendum 💚</span>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <a class="time__info">Há 3 horas</a>
+                    </div>
+                    <div class="leaveacomment">
+                        <form class="formcomment">
+                            <button class="emojibutton" type="button">
+                                <span class="iconcontainer" id="emojiicon"></span>
+                            </button>
+                            <textarea 
+                                class="formcomment__text"
+                                id="commenttext" 
+                                name="Área de comentário" 
+                                id="commentarea" 
+                                placeholder="Adicione um comentário..."></textarea>
+                            <button class="pubblishbutton" id="pubblish" type="submit">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer role="contentinfo" class="footer">
+        Designed with <span class="author-info"> ❤&#xFE0E; </span> by <a class="author-info" href="https://github.com/sameoldcarlos">Carlos Alves</a>
+    </footer>
+</body>
+</html>

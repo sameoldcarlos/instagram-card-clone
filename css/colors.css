@@ -1,0 +1,16 @@
+:root {
+    --blue-active:      #0095F6;
+    --blue-violet:      #285AEB;
+    --purple-haze:      #7D0A55;
+    --bright-purple:    #D6249F;
+    --red-heart:        #ED4956;
+    --strong-orange:    #FD5949;
+    --pale-yellow:      #FDF497;
+    --blue-inactive:    #B2DEFD;
+    --absolute-white:   #FFFFFF;
+    --extra-light-gray: #EFEFEF;
+    --very-light-gray:  #DBDBDB;
+    --light-gray:       #A4A4A4;
+    --dark-gray:        #7B7B7B;
+    --extra-dark-gray:  #262626;
+}
