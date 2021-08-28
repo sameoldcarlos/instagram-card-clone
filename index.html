@@ -39,17 +39,17 @@
                         <img class="cardcontent__image" src="https://i.picsum.photos/id/828/614/411.jpg?hmac=MGP2C5Al3qiiV7as4Jlk3Q4ngLXkACXMVXHVN4AC1TY" alt="">
                     </div>
                     <div class="cardoptions">
-                        <button class="cardbutton cardbutton--heart" id="likebutton" title="Curtir">
-                            <span class="iconcontainer" id="likeicon"></span>
+                        <button class="cardbutton cardbutton--heart" title="Curtir">
+                            <span class="iconcontainer iconcontainer--likecontainer"></span>
                         </button>
                         <button class="cardbutton cardbutton--comment">
-                            <span class="iconcontainer" id="commenticon"></span>
+                            <span class="iconcontainer"></span>
                         </button>
                         <button class="cardbutton cardbutton--share">
-                            <span class="iconcontainer" id="shareicon"></span>
+                            <span class="iconcontainer"></span>
                         </button>
-                        <button class="cardbutton cardbutton--save" id="savebutton" title="Salvar">
-                            <span class="iconcontainer" id="saveicon"></span>
+                        <button class="cardbutton cardbutton--save" title="Salvar">
+                            <span class="iconcontainer iconcontainer--savecontainer"></span>
                         </button>
                     </div>
                 </div>
@@ -69,12 +69,18 @@
                     <div class="comments">
                         <div class="seeall"><a class="seeall__link">Ver todos os 6 comentários</a></div>
                         <div class="comment">
-                            <span class=commentinfo><a class="otherusername">randomuser</a></span>
+                            <span class=commentinfo><a class="otherusername">randomuser</a>
                             cras bibendum tortor congue 🙊</span>
+                            <button class="cardbutton cardbutton--heart cardbutton--likecomment" title="Curtir">
+                                <span class="iconcontainer iconcontainer--likecomment iconcontainer--likecontainer"></span>
+                            </button>
                         </div>
                         <div class="comment">
-                            <span class=commentinfo><a class="otherusername">otheruser</a></span>
+                            <span class=commentinfo><a class="otherusername">otheruser</a>
                             aliquam vestibulum erat facilisis lacus bibendum 💚</span>
+                            <button class="cardbutton cardbutton--heart cardbutton--likecomment" title="Curtir">
+                                <span class="iconcontainer iconcontainer--likecomment iconcontainer--likecontainer"></span>
+                            </button>
                         </div>
                     </div>
                     <div class="time">
@@ -83,13 +89,11 @@
                     <div class="leaveacomment">
                         <form class="formcomment">
                             <button class="emojibutton" type="button">
-                                <span class="iconcontainer" id="emojiicon"></span>
+                                <span class="iconcontainer""></span>
                             </button>
                             <textarea 
                                 class="formcomment__text"
-                                id="commenttext" 
-                                name="Área de comentário" 
-                                id="commentarea" 
+                                name="Área de comentário"
                                 placeholder="Adicione um comentário..."></textarea>
                             <button class="pubblishbutton" id="pubblish" type="submit">Publicar</button>
                         </form>
@@ -98,6 +102,34 @@
             </article>
         </div>
     </main>
+    <div class="moreoptionspanel" id="moreoptionspanel">
+        <div class="moreoptionscontainer" id="moreoptionscontainer">
+            <div class="followingoption">
+                <a class="followingoption__link followingoption__link--danger">Denunciar</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link followingoption__link--danger">Deixar de Seguir</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Ir para publicação</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Contas marcadas</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Compartilhar em...</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Copiar link</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Incorporar</a>
+            </div>
+            <div class="followingoption">
+                <a class="followingoption__link">Cancelar</a>
+            </div>
+        </div>
+    </div>
     <footer role="contentinfo" class="footer">
         Designed with <span class="author-info"> ❤&#xFE0E; </span> by <a class="author-info" href="https://github.com/sameoldcarlos">Carlos Alves</a>
     </footer>
